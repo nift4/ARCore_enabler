@@ -3,19 +3,18 @@ A Magisk module that enables ARCore support for device that haven't got official
 
 ### ARCore has been renamed by Google to Google Play Services for AR. Despite that, Google keeps calling it with the old name in the documentation, so I'll call it ARCore the same.
 
-# How does this module work?
-It changes the fingerprint of your phone to Google Pixel 2 one, which is supported officially by ARCore, so apps will think your phone is a Pixel 2. I have chosen this fingerprint because it works properly and allows to install Playground packages that are limited to Google Pixels.
-
-The module also adds a xml so that Play Store will allow you to look for apps that support ARCore and install ARCore itself.
-
-### You might want to use this module also without ARCore stuff, in fact if your phone isn't passing SafetyNet (CTS profile), this module will fix that, as well.
+# How does this module work? 
+The module adds a xml so that Play Store will allow you to look for apps that support ARCore and install ARCore itself.
 
 # Notes
-1. Security patches info in system settings won't show the right phone patches, but the fingerprint ones after installing the module (this is required for SafetyNet);
-2. To install Playground you have to use the version patched by Arnova, you will find it in [this page](https://www.celsoazevedo.com/files/android/google-camera/ar/):
+1. It is required to have a fingerprint of a supported device.
+2. To install Playground you have to use the version patched by Arnova, you will find it in [this page](https://www.celsoazevedo.com/files/android/google-camera/ar/).
 3. From the version 2.0, during the installation Play Store cache will be cleared. It might take some time for changes to be displayed, if the don't after some time, you can force them by clearing Play Store data.
 
 # Changelog
+
+### Fork 1.0.0
+Removed fingerprint changing
 
 ### V 2.1
 Updated fingerprint and Unity version
